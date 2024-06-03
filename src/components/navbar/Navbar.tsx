@@ -3,8 +3,12 @@ import Brand from "./subcomponents/Brand.tsx";
 import Nav from "./subcomponents/Nav.tsx";
 import NavBarSM from "./subcomponents/NavBarSM.tsx";
 
-function Navbar({ classname, children }) {
-  return <div className={classname}>{children}</div>;
+function Navbar({ classname, children, id }: any) {
+  return (
+    <div id={id} className={classname}>
+      {children}
+    </div>
+  );
 }
 
 Navbar.Brand = Brand;
